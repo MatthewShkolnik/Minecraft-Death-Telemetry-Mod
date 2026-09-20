@@ -5,13 +5,12 @@ Death Telemetry is a server-and-client Fabric mod for Minecraft 26.3 that captur
 ---
 <p align="center">
   <a href="https://buymeacoffee.com/MatthewShkolnik" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40">
+    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee">
   </a>
   <a href="https://www.curseforge.com/members/MatthewShkolnik/projects" target="_blank">
-    <img src="https://raw.githubusercontent.com/Intergrav/devins-badges/v3/assets/cozy/supported/curseforge_vector.svg" alt="CurseForge" height="40">
+    <img src="https://img.shields.io/badge/CurseForge-Profile-f16436?style=for-the-badge&logo=curseforge&logoColor=white" alt="CurseForge">
   </a>
 </p>
-
 ---
 
 ![Telemetry report after taking damage from a Zombie](MobDamage.png)
