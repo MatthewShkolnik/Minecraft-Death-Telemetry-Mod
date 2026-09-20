@@ -4,10 +4,10 @@ Death Telemetry is a server-and-client Fabric mod for Minecraft 26.3 that captur
 
 ---
 
-[Telemetry report after taking damage from a Zombie](MobDamage.png)
+![Telemetry report after taking damage from a Zombie](MobDamage.png)
 Telemetry report after taking damage from a Zombie. 
 
-[Telemetry report after free falling](FreeFall.png)
+![Telemetry report after free falling](FreeFall.png)
 Telemetry report after free falling.
 
 ---
