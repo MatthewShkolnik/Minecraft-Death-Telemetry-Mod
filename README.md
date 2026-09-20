@@ -82,7 +82,7 @@ Telemetry report after free falling.
 
 ---
 
-### To-DO
+### To-Do
 1. Make the Autopsy Report item craftable for situations where it is unrecoverable.
 2. Add a config file to change preferences. 
 3. Create a menu to analyze from every death in the world.
