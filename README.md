@@ -3,10 +3,14 @@
 Death Telemetry is a server-and-client Fabric mod for Minecraft 26.3 that captures pre-mortem telemetry in a zero-overhead rolling ring buffer. When a player dies, an invulnerable Autopsy Report "Black Box" item drops at the exact point of death. Right-clicking the item opens an authentic, interactive flight recorder HUD that visualizes the victim's final 10 seconds.
 
 ---
-
-<a href="https://buymeacoffee.com/MatthewShkolnik" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40">
-</a>
+<p align="center">
+  <a href="https://buymeacoffee.com/MatthewShkolnik" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40">
+  </a>
+  <a href="https://www.curseforge.com/members/MatthewShkolnik/projects" target="_blank">
+    <img src="https://raw.githubusercontent.com/Intergrav/devins-badges/v3/assets/cozy/supported/curseforge_vector.svg" alt="CurseForge" height="40">
+  </a>
+</p>
 
 ---
 
