@@ -4,11 +4,7 @@ Death Telemetry is a server-and-client Fabric mod for Minecraft 26.3 that captur
 
 ---
 
-<a href="https://www.buymeacoffee.com/MatthewShkolnik" target="_blank")>
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-    alt="Buy Me A Coffee"
-    width="150">
-</a>
+[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://buymeacoffee.com/MatthewSholnik)
 
 ---
 
