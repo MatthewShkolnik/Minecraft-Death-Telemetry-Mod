@@ -31,6 +31,11 @@ Telemetry report after free falling.
   - **X and Z Velocity Graph**: An overlapping dual-line graph displaying horizontal motion vectors (red for X-velocity, purple for Z-velocity) to analyze knockback and directional movement.
   - **Detailed Entity and Hazard Attribution**: Resolves the exact mob or player attacker (such as Zombie, Skeleton, Creeper, or custom-named mobs), projectile types, or environmental hazard names (such as Fire, Lava, Fall, The Void, Drowning, etc.).
   - **Interactive Hover Inspection**: Hover over any column on the telemetry timeline to view exact values for that half-second window, including time before death, health, velocity components, and damage breakdown.
+- **Multi-Language Support (i18n)**:
+  - **English** (`en_us`)
+  - **Spanish** (`es_es`, `es_mx`, `es_ar`, `es_cl`, `es_ec`, `es_uy`, `es_ve`)
+  - **Simplified Chinese** (`zh_cn` / 简体中文)
+  - Full client-side localization for the flight recorder HUD, graph titles and axes, hover tooltips, item name and lore, dimension names, and environmental damage causes.
 
 ---
 
@@ -47,7 +52,7 @@ Telemetry report after free falling.
 
 ### Client Installation
 1. Install Minecraft 26.3 with Fabric Loader.
-2. Download `death-telemetry-1.0.0.jar` from the GitHub Releases page.
+2. Download `death-telemetry-1.1.0.jar` from the GitHub Releases page.
 3. Download the matching **Fabric API** for Minecraft 26.3.
 4. Place both `.jar` files into your `.minecraft/mods` directory:
    - **Windows**: `%appdata%\.minecraft\mods`
@@ -57,7 +62,7 @@ Telemetry report after free falling.
 
 ### Server Installation
 1. Set up a Minecraft 26.3 dedicated server using Fabric Loader.
-2. Place `death-telemetry-1.0.0.jar` and the Fabric API jar into the server's `mods/` directory.
+2. Place `death-telemetry-1.1.0.jar` and the Fabric API jar into the server's `mods/` directory.
 3. Restart the server.
 
 *Note: While Death Telemetry operates server-side to record telemetry data and drop the black box, clients must also have the mod installed to open and view the interactive telemetry GUI.*
