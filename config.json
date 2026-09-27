@@ -1,0 +1,15 @@
+{
+  "snapshotCount": 20,
+  "sampleIntervalTicks": 10,
+  "dropOnDeath": true,
+  "invulnerableItem": true,
+  "glowingItem": false,
+  "preventDespawn": true,
+  "respectKeepInventory": false,
+  "logDeathCoordinates": true,
+  "showVictimInLore": true,
+  "showCauseInLore": true,
+  "showCoordinatesInLore": true,
+  "freefallWarningThreshold": -0.6,
+  "pauseGameOnScreen": false
+}

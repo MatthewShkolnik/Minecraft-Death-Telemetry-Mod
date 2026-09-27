@@ -52,7 +52,7 @@ Telemetry report after free falling.
 
 ### Client Installation
 1. Install Minecraft 26.3 with Fabric Loader.
-2. Download `death-telemetry-1.1.0.jar` from the GitHub Releases page.
+2. Download `death-telemetry-1.2.0.jar` from the GitHub Releases page.
 3. Download the matching **Fabric API** for Minecraft 26.3.
 4. Place both `.jar` files into your `.minecraft/mods` directory:
    - **Windows**: `%appdata%\.minecraft\mods`
@@ -62,7 +62,7 @@ Telemetry report after free falling.
 
 ### Server Installation
 1. Set up a Minecraft 26.3 dedicated server using Fabric Loader.
-2. Place `death-telemetry-1.1.0.jar` and the Fabric API jar into the server's `mods/` directory.
+2. Place `death-telemetry-1.2.0.jar` and the Fabric API jar into the server's `mods/` directory.
 3. Restart the server.
 
 *Note: While Death Telemetry operates server-side to record telemetry data and drop the black box, clients must also have the mod installed to open and view the interactive telemetry GUI.*
@@ -87,11 +87,59 @@ Telemetry report after free falling.
 
 ---
 
+## Configuration
+
+Death Telemetry creates a `config.json` file in your `.minecraft/config/death_telemetry/config.json` directory (or `.minecraft/config/death_telemetry.json`). You can customize any of the following settings to your wish:
+
+```json
+{
+  "snapshotCount": 20,
+  "sampleIntervalTicks": 10,
+  "dropOnDeath": true,
+  "invulnerableItem": true,
+  "glowingItem": false,
+  "preventDespawn": true,
+  "respectKeepInventory": false,
+  "logDeathCoordinates": true,
+  "showVictimInLore": true,
+  "showCauseInLore": true,
+  "showCoordinatesInLore": true,
+  "freefallWarningThreshold": -0.6,
+  "pauseGameOnScreen": false
+}
+```
+
+### Options Breakdown
+
+| Setting | Type | Default | Description |
+| :--- | :--- | :--- | :--- |
+| `snapshotCount` | Integer | `20` | Number of telemetry snapshot samples retained in the rolling buffer (5–600). |
+| `sampleIntervalTicks` | Integer | `10` | Frequency of telemetry recordings in game ticks (10 ticks = 0.5s / 2 Hz; 20 ticks = 1.0s / 1 Hz). |
+| `dropOnDeath` | Boolean | `true` | Whether the Autopsy Report black box is dropped when a player dies. |
+| `invulnerableItem` | Boolean | `true` | Whether the dropped black box item is immune to damage from lava, fire, and explosions. |
+| `glowingItem` | Boolean | `false` | Whether the dropped black box item has an outline glow effect in the world. |
+| `preventDespawn` | Boolean | `true` | Whether the dropped black box item never despawns (prevents vanilla 5-minute despawn timer). |
+| `respectKeepInventory` | Boolean | `false` | If `true`, does not drop the report when the `keepInventory` gamerule is enabled. |
+| `logDeathCoordinates` | Boolean | `true` | Logs death coordinates and report creation to the server console. |
+| `showVictimInLore` | Boolean | `true` | Shows victim name in the item tooltip lore. |
+| `showCauseInLore` | Boolean | `true` | Shows fatal cause / death message in the item tooltip lore. |
+| `showCoordinatesInLore` | Boolean | `true` | Shows death coordinates in the item tooltip lore (useful to disable on PvP servers). |
+| `freefallWarningThreshold`| Decimal | `-0.6` | Vertical velocity descent rate (m/s) that triggers the freefall danger warning in the GUI. |
+| `pauseGameOnScreen` | Boolean | `false` | In singleplayer, whether opening the autopsy report screen pauses the game. |
+
+### In-Game Reload
+Server operators and singleplayer players can reload the configuration at runtime without restarting the server:
+```text
+/death_telemetry reload
+```
+
+---
+
 ### To-Do
 1. Make the Autopsy Report item craftable for situations where it is unrecoverable.
-2. Add a config file to change preferences. 
+2. [Completed] Add a config file to change preferences (`config.json`).
 3. Create a menu to analyze from every death in the world.
-4. Add a more interactive and fun way to view data. 
+4. Add a more interactive and fun way to view data.
 
 ---
 
